@@ -10,6 +10,8 @@ public class FileReadVerticle extends AbstractVerticle {
   public void start() {
     FileSystem fs = vertx.fileSystem();
 
+    System.out.println("Current working directory: " + System.getProperty("user.dir"));
+
     // 비동기 파일 읽기
     fs.readFile("largefile.txt", result -> {
       if (result.succeeded()) {
