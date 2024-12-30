@@ -1,0 +1,3 @@
+com/example/ProducerVerticle.class
+com/example/HttpServerVerticle.class
+com/example/ConsumerVerticle.class
